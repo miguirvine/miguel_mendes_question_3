@@ -35,8 +35,6 @@ void read_input(string p_filepath, string& s, string& t, int& k) {
          for (int i=0; i<t.length(); ++i)
             if (!islower(t[i]))
                 throw invalid_argument("Invalid file " + p_filepath);
-
-
      }
      else
         throw invalid_argument("Invalid file " + p_filepath);
@@ -101,8 +99,7 @@ int main(int argc, char *argv[])
     if (argc != 2) {
         cout << "Invalid number of arguments";
         return 0;
-    }
-    
+    }    
     string s, t;
     int k;
     read_input (argv[1], s, t, k);
